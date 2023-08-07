@@ -1,0 +1,31 @@
+
+  
+  .main{
+    margin-right: 30px;
+  }
+  .brand {
+    font-weight: bold;
+    color: #6a2fb3; 
+    font-size: 30px;
+    
+  }
+  .price-select {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    font-size: 14px;
+    color: #333;
+    margin-right: 18px;
+  }
+  
+  .price-select:hover {
+    background-color: #eaeaea;
+  }
+  
+  .price-select:focus {
+    outline: none;
+    border-color: #6a2fb3;
+    box-shadow: 0 0 0 2px rgba(106, 47, 179, 0.2);
+  }
+  

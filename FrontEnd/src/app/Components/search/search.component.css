@@ -1,0 +1,128 @@
+
+    .btn-info {
+      color: #fff;
+      background-color: #17a2b8;
+      border-color: #17a2b8;
+    }
+    
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 4px;
+    }
+    .row{
+          margin-top: -10px;
+    }
+    
+    .card {
+      width: 300px;
+     
+      
+      margin-right: 20px;
+     
+      padding: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card img {
+      width: 200px;
+      height: 180px;
+      margin: 0 auto;
+    }
+    
+    .card-body {
+      padding: 8px;
+    }
+    
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    
+    .card-text {
+      margin-bottom: 10px;
+    }
+    
+     
+    .btn.cart {
+      
+      margin: 5px;
+    } 
+    
+    h1.text-center {
+      margin-top: 50px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .view-details-button {
+      background-color:#0D47A1;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .view-details-button:hover {
+      background-color: #1976D2;
+    }
+    
+    
+    .load-more-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+    
+    .load-more-button {
+      background-color: #f44336;
+      color: #ffffff;
+      font-size: 16px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 0 10px; 
+    }
+    
+    .load-more-button:hover {
+      background-color: #e53935;
+    }
+    .previous-button {
+      margin-right: 10px;
+    }
+    
+    .next-button {
+      margin-left: 10px;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+    
+    @media (max-width: 768px) {
+      .card {
+        width: 100%;
+      }
+    
+      .card img {
+        width: 100%;
+        height: auto;
+      }
+    
+      /* .btn.details,
+      .btn.cart {
+        display: block;
+        width: 100%;
+      } */
+    }

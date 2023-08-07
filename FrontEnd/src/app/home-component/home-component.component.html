@@ -1,0 +1,17 @@
+ <app-header></app-header>
+
+ 
+<div class="container">
+  <div class="content">
+    <form class="search-form" (ngSubmit)="performSearch()">
+      <mat-form-field appearance="outline" class="search-input">
+        <input matInput type="text" [(ngModel)]="searchTerm" name="searchTerm" placeholder="search for products,brand and more">
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+      <button mat-raised-button type="submit" class="search-button">Search</button>
+    </form>
+  </div>
+  
+</div>
+
+

@@ -1,0 +1,38 @@
+
+ <app-header></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-9 " *ngIf="products">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title-group>
+            <mat-card-title class="product-name">{{products.name}}</mat-card-title>
+            <mat-card-subtitle class="product-brand">{{products.brand}}</mat-card-subtitle>
+            <mat-card-subtitle class="product-price">Rs.{{products.price}}</mat-card-subtitle>
+            <mat-card-subtitle class="product-code">CODE: {{products.productCode}}</mat-card-subtitle>
+            <mat-card-subtitle *ngIf="yes" class="availability available">Available</mat-card-subtitle>
+            <mat-card-subtitle *ngIf="no" class="availability unavailable">Not Available</mat-card-subtitle>
+            <mat-card-subtitle *ngIf="yes" class="delivery-days">Delivery in {{days}} days</mat-card-subtitle>
+            <img mat-card-xl-image class="product-image" src="{{products.image}}">
+          </mat-card-title-group>
+        </mat-card-header>
+        <mat-card-content>
+          <p class="product-description">{{products.description}}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="col-md-3">
+      <form [formGroup]="pincode" (ngSubmit)="Pcode()" class="form-horizontal">
+        <input class="form-control" type="pincode" placeholder="Enter Pincode" id="pincode" name="pincode" formControlName="Pincode">
+        <button class="btn signin btn btn-info" [disabled]="pincode.invalid">Check Delivery</button>
+
+      </form>
+      <button class="btn signin btn btn-info" (click)="back()">Back</button>
+
+    </div>
+  </div>
+</div>
+
+   
+

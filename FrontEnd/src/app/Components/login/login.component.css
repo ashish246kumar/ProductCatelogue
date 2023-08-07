@@ -1,0 +1,61 @@
+
+  .example-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  mat-card-title, .mat-card-subtitle {
+    display: flex;
+    margin: 0;
+    padding-bottom: 15px;
+    
+   
+}
+
+  .login-card {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .form-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .login-button {
+    width: 100%;
+  }
+
+
+  .card-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .register-link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .register-link:hover {
+    color: blue;
+  }
+  
+  .back-link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .back-link:hover {
+    color: blue;
+    order: 1;
+  }
+  

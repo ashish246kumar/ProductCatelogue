@@ -1,0 +1,38 @@
+
+     .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 525px; 
+      background-image: url('https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHByb2R1Y3QlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    
+    .content {
+      margin-bottom: 20px;
+    }
+    
+    .search-form {
+      display: flex;
+      align-items: center;
+    }
+    
+    .search-input {
+      margin-right: 10px;
+      font-size: 18px;
+      height: 40px; 
+    }
+    
+    .search-button {
+      background-color: #7a7c7f;
+      color: rgb(122, 118, 118);
+      height: 50px; 
+      font-size: 16px;
+      margin-top: 10px;
+     
+    }
+    

@@ -1,0 +1,35 @@
+
+   <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <h2 class="navbar-brand brand">Product Catalogue</h2>
+      <div class="d-flex align-items-center">
+       
+        <div *ngIf="user && isCurrentUrl('/')">
+          <select [formControl]="selectedRangeControl" (change)="onRangeChange()" class="price-select">
+            <option value="">Search By Price</option>
+            <option value="0-5000">Rs0 - Rs5000</option>
+            <option value="5000-10000">Rs5000 - Rs10000</option>
+            <option value="10000-20000">Rs10000 - Rs20000</option>
+            <option value="20000+">Rs20000+</option>
+          </select>
+        </div>
+        
+        <div  *ngIf="isCurrentUrl('/')&&user==false">
+          
+          <button type="button"  (click)="register()" class="btn btn-primary "style="margin-left: 10px; margin-right: 10px;">Register</button>
+        </div>
+        
+        <div *ngIf="isCurrentUrl('/')||isCurrentUrl('/product-search')">
+        <button type="button" *ngIf="user==false" (click)="login()" class="btn btn-primary">Login</button>
+        <button type="button" *ngIf="user==true" (click)="logout()" class="btn btn-primary">Logout</button>
+
+        </div>
+        
+        <div *ngIf="isCurrentUrl('/register')||isCurrentUrl('/product-search')" >
+            <button type="button"  (click)="back()" class="btn btn-primary"style="margin-left: 10px;">Home</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
